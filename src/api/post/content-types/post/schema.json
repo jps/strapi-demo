@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "posts"
+    },
+    "hero": {
+      "type": "dynamiczone",
+      "components": [
+        "custom.carousel",
+        "custom.hero"
+      ]
+    }
+  }
+}

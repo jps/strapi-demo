@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_custom_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "icon": "repeat"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

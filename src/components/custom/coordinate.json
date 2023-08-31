@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_custom_coordinates",
+  "info": {
+    "displayName": "coordinate",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "x": {
+      "type": "float"
+    },
+    "y": {
+      "type": "float"
+    }
+  }
+}
